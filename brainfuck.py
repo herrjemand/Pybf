@@ -49,3 +49,7 @@ def brainfuck(b):
 		if x == l and s != '': raise SyntaxError("Missing ].")
 
 	return buff
+	
+print(brainfuck('++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++\
+ .>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.\
+ ------.--------.>+.>.'))
