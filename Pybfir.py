@@ -2,7 +2,7 @@ class Pybfir:
 	"""
 		Pybfir - Python Brainfuck interpreter Recursive
 		By Herr Niemand 2014 
-		Version 0.14.1
+		Version 0.16.1
 		Origin: https://github.com/herrniemand/python_brainfuck
 		help: http://c2.com/cgi/wiki?BrainfuckLanguage
 

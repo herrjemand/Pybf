@@ -1,8 +1,8 @@
 def brainfuck(b):
 	"""
-	Pybfi - Python Brainfuck interpreter
+	Pybfi - Python Brainfuck interpreter(OLD)
 	By Herr Niemand 2014 
-	Version 0.10
+	Version 0.10.0
 	Origin: https://github.com/herrniemand/python_brainfuck
 
 	arguments:
@@ -49,7 +49,3 @@ def brainfuck(b):
 		if x == l and s != '': raise SyntaxError("Missing ].")
 
 	return buff
-	
-print(brainfuck('++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++\
- .>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.\
- ------.--------.>+.>.'))
