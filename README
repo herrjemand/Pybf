@@ -1,8 +1,15 @@
-Python implementation of Brainfuck
+Python interpreter of Brainfuck
 Usefull links:
 http://www.4mhz.de/
 https://en.wikipedia.org/wiki/Brainfuck
 http://habrahabr.ru/post/95126/
+
+Special thanks:
+https://github.com/pablojorge
+
+Samples:
+https://github.com/pablojorge/brainfuck/tree/master/samples
+https://github.com/pablojorge/brainfuck/tree/master/programs
 
 TODO:
 1. Develop more brainfuck programms.
