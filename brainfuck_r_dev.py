@@ -28,7 +28,7 @@ class Pybfir:
 			l = len(b)
 			while x < l:
 				n = b[x]
-				if not br or n in '][' and not n.isalpha():
+				if not br or n in '][':
 					if n == '>': self.__i += 1
 					elif n == '<': self.__i -= 1
 					elif n == '+': self.__mem[self.__i] = (self.__mem[self.__i] + 1)%255
@@ -58,7 +58,6 @@ class Pybfir:
 
 				elif br: s += n
 				x += 1
-				if x == l and s: raise SyntaxError("Missing ].")
 
 		except Exception as e:
 			print(e.__class__.__name__,':',str(e).capitalize())
