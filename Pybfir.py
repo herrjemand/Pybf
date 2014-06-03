@@ -2,7 +2,7 @@ class Pybfir:
 	"""
 		Pybfir - Python Brainfuck interpreter Recursive
 		By Herr Niemand 2014 
-		Version 0.16.1
+		Version 1.0.0
 		Origin: https://github.com/herrniemand/python_brainfuck
 		help: http://c2.com/cgi/wiki?BrainfuckLanguage
 
@@ -18,7 +18,7 @@ class Pybfir:
 		"""
 		.run:
 			arguments:
-				(string)b - brainfuck code
+				(string)b - brainfuck code.
 
 			help: http://c2.com/cgi/wiki?BrainfuckLanguage
 		"""
@@ -61,3 +61,12 @@ class Pybfir:
 
 		except Exception as e:
 			print(e.__class__.__name__,':',str(e).capitalize())
+
+	def load(self, filename):
+		"""
+		.load:
+			arguments:
+				(string)filename - file address.
+		"""
+		with open(filename) as f:
+			self.run(f.read())
