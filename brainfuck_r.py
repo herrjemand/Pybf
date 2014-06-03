@@ -27,7 +27,7 @@ def brainfuckr(b, ii=0, iarr=[0 for n in range(0,30000)],ibuff=''):
 				# buff += brainfuckr(s,i,arr) #FOR RECURSION VERSION
 				s = ''
 
-		elif s,:
+		elif:
 			s += n
 
 		x += 1

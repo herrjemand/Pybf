@@ -18,7 +18,6 @@ def brainfuck(b):
 	s = buff = ''
 	arr = [0 for n in range(0,30000)]#30000 memory cells
 	l = len(b)
-	br = 0
 	while x < l:
 		n = b[x]
 		if (s == '' or n == ']') and not n.isalpha():
@@ -50,4 +49,3 @@ def brainfuck(b):
 		if x == l and s != '': raise SyntaxError("Missing ].")
 
 	return buff
-print(brainfuck(',c'))
