@@ -30,7 +30,9 @@ class Pybfir:
 			n = b[x]
 			if not br or n in '][':
 				if n == '>': self.__i += 1
-				elif n == '<': self.__i -= 1
+				elif n == '<': 
+					if self.__i >= 0:self.__i -= 1 
+					else: raise IndexError('Memory cell out of range')
 				elif n == '+': self.__mem[self.__i] = (self.__mem[self.__i] + 1)%255
 				elif n == '-': self.__mem[self.__i] = (self.__mem[self.__i] - 1)%255
 				elif n == '.': print(chr(self.__mem[self.__i]), end='')
